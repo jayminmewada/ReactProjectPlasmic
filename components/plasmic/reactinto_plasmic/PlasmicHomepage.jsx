@@ -18,6 +18,7 @@ import {
   deriveRenderOpts
 } from "@plasmicapp/react-web";
 import Button2 from "../../Button2"; // plasmic-import: j6-blm6HPhe/component
+import { Jaymin } from "../../../../components/Testing"; // plasmic-import: ZzMSXRgflJ/codeComponent
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_reactinto_plasmic.module.css"; // plasmic-import: foD5fMSNLpNekTGVDic3kt/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: HM_VVxq6DSqf/css
@@ -179,6 +180,13 @@ function PlasmicHomepage__RenderFunc(props) {
               </p.Stack>
             </p.Stack>
           </p.Stack>
+
+          <Jaymin
+            data-plasmic-name={"jaymin"}
+            data-plasmic-override={overrides.jaymin}
+            className={classNames("__wab_instance", sty.jaymin)}
+            name={"Hello there"}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -186,8 +194,9 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section"],
-  section: ["section"]
+  root: ["root", "section", "jaymin"],
+  section: ["section"],
+  jaymin: ["jaymin"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -224,6 +233,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
+    jaymin: makeNodeComponent("jaymin"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps,
