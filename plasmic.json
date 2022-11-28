@@ -104,11 +104,6 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         },
         {
-          "id": "ZzMSXRgflJ",
-          "name": "Jaymin",
-          "componentImportPath": "../components/Testing.jsx"
-        },
-        {
           "id": "kBUCA_mXkw",
           "name": "Footer",
           "componentImportPath": "../components/Footer/Footer.jsx"
