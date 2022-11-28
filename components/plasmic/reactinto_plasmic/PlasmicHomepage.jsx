@@ -17,6 +17,7 @@ import {
   createPlasmicElementProxy,
   deriveRenderOpts
 } from "@plasmicapp/react-web";
+import { Home } from "../../../../components/Home/index"; // plasmic-import: WXk8-8mBR3/codeComponent
 import Button2 from "../../Button2"; // plasmic-import: j6-blm6HPhe/component
 import { Footer } from "../../../../components/Footer/Footer"; // plasmic-import: kBUCA_mXkw/codeComponent
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -74,6 +75,13 @@ function PlasmicHomepage__RenderFunc(props) {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__gph7I)}
             >
+              <Home
+                data-plasmic-name={"home"}
+                data-plasmic-override={overrides.home}
+                className={classNames("__wab_instance", sty.home)}
+                name={"Hello there"}
+              />
+
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -168,13 +176,13 @@ function PlasmicHomepage__RenderFunc(props) {
                   </Button2>
                 </p.Stack>
               </p.Stack>
-            </p.Stack>
 
-            <Footer
-              data-plasmic-name={"footer"}
-              data-plasmic-override={overrides.footer}
-              className={classNames("__wab_instance", sty.footer)}
-            />
+              <Footer
+                data-plasmic-name={"footer"}
+                data-plasmic-override={overrides.footer}
+                className={classNames("__wab_instance", sty.footer)}
+              />
+            </p.Stack>
           </p.Stack>
         </div>
       </div>
@@ -183,8 +191,9 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "footer"],
-  section: ["section", "footer"],
+  root: ["root", "section", "home", "footer"],
+  section: ["section", "home", "footer"],
+  home: ["home"],
   footer: ["footer"]
 };
 
@@ -222,6 +231,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
+    home: makeNodeComponent("home"),
     footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

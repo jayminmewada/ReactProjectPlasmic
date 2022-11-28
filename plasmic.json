@@ -107,6 +107,11 @@
           "id": "kBUCA_mXkw",
           "name": "Footer",
           "componentImportPath": "../components/Footer/Footer.jsx"
+        },
+        {
+          "id": "WXk8-8mBR3",
+          "name": "Home",
+          "componentImportPath": "../components/Home/index.js"
         }
       ]
     }
