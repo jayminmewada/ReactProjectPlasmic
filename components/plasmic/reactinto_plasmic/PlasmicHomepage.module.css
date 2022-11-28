@@ -38,14 +38,6 @@
   > img {
   margin-top: 16px;
 }
-.text__mjLlJ {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 800px;
-  font-size: 100px;
-  min-width: 0;
-}
 .freeBox__gph7I {
   flex-direction: column;
   display: flex;
@@ -213,4 +205,12 @@
   object-fit: cover;
   position: relative;
   align-self: flex-start;
+  height: 41px;
+  width: 155px;
+  flex-shrink: 0;
+}
+.footer:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
 }
